@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Calibration analysis for I-NP (Informative Prior, No Pruning). Analysis restricted to high-confidence predictions (confidence $\geq 0.9$), where the majority of predictions fall. ``\% High Conf'' shows the proportion of predictions in this region. ``Avg Conf'' and ``Accuracy'' are computed within this high-confidence subset. Gap = Avg Conf $-$ Accuracy; positive values indicate overconfidence.}
+\label{tab:calibration-notprune_notuniform}
+\begin{tabular}{@{}lccccl@{}}
+\toprule
+Method & \% High Conf & Avg Conf & Accuracy & Gap & Status \\
+\midrule
+TRUNCATED-PD-EIG-COST-AWARE & 85.9\% & 95.6\% & 90.6\% & +5.1\% & Overconfident \\
+ADAPTIVE-EIG-COST-AWARE & 86.7\% & 96.0\% & 90.7\% & +5.3\% & Overconfident \\
+ADAPTIVE-PD-COST-AWARE & 86.5\% & 95.9\% & 90.5\% & +5.4\% & Overconfident \\
+TRUNCATED-PD-COST-AWARE & 87.8\% & 96.1\% & 90.1\% & +6.0\% & Overconfident \\
+TRUNCATED-EIG-COST-AWARE & 86.5\% & 95.6\% & 89.1\% & +6.4\% & Overconfident \\
+ADAPTIVE-PD-EIG-COST-AWARE & 85.0\% & 96.0\% & 89.4\% & +6.5\% & Overconfident \\
+EIG & 80.9\% & 96.4\% & 89.2\% & +7.1\% & Overconfident \\
+EIG-COST-AWARE & 81.4\% & 95.8\% & 87.7\% & +8.1\% & Overconfident \\
+LLM-SELECT & 36.5\% & 97.6\% & 31.0\% & +66.6\% & Overconfident \\
+\bottomrule
+\end{tabular}
+\end{table}

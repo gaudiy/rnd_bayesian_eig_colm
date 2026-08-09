@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Discriminability analysis for U-NP (Uniform Prior, No Pruning). Cohen's $d$ measures how well confidence separates correct from incorrect predictions. Higher values indicate better self-awareness.}
+\label{tab:discriminability-notprune_uniform}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & Conf (Correct) & Conf (Incorrect) & Gap & Cohen's $d$ & Interpretation \\
+\midrule
+ADAPTIVE-PD-EIG-COST-AWARE & 0.905 & 0.165 & +0.740 & 4.36 & Very Large \\
+TRUNCATED-PD-COST-AWARE & 0.906 & 0.197 & +0.709 & 4.18 & Very Large \\
+TRUNCATED-PD-EIG-COST-AWARE & 0.903 & 0.189 & +0.714 & 4.14 & Very Large \\
+ADAPTIVE-PD-COST-AWARE & 0.895 & 0.165 & +0.729 & 3.96 & Very Large \\
+ADAPTIVE-EIG-COST-AWARE & 0.898 & 0.189 & +0.709 & 3.89 & Very Large \\
+TRUNCATED-EIG-COST-AWARE & 0.891 & 0.177 & +0.714 & 3.89 & Very Large \\
+EIG & 0.875 & 0.198 & +0.677 & 3.27 & Very Large \\
+EIG-COST-AWARE & 0.867 & 0.201 & +0.666 & 3.15 & Very Large \\
+LLM-SELECT & 0.603 & 0.635 & -0.033 & -0.10 & Inverted \\
+\bottomrule
+\end{tabular}
+\end{table}

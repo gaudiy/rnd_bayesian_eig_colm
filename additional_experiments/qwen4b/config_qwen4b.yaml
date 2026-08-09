@@ -1,0 +1,61 @@
+# Qwen-4B robustness configuration.
+# Uses the same local-HF code path as the main MedGemma-4B experiment.
+
+model_repo: Qwen/Qwen3-4B-Instruct-2507
+model_name: qwen-3-4b
+
+system:
+  gpu_ids: [0, 1]
+  queue_dir: "task_queue"
+  batch_size: 34
+
+model:
+  max_new_tokens: 128
+  temperature: 0.0
+
+data:
+  data_path: "mimic_data.csv"
+  disease_mapping_path: "disease_mapping.json"
+  disease_list_path: "top_n_target_labels.txt"
+  output_dir: "results_notPrune_notUniform"
+
+mimic:
+  n_diseases_num: 500
+  n_top_diseases_num: 100
+  n_patients_num: 1000
+  random_select_seed: 77
+  data_source_folder: "physionet.org/files/mimic-iv-ed/2.2/ed"
+
+experiment:
+  start_idx: 0
+  end_idx: 200
+  max_questions: 15
+  confidence_threshold: 0.9
+
+  question_cost: 15
+  question_num: 3
+  test_num: 3
+
+  stagnation_threshold: 0.15
+  stagnation_window: 1
+  stagnation_exit_threshold: 0.4
+
+  uniform_prior: false
+  use_pruning: false
+
+  concentration_threshold: 0.90
+  concentration_top_perc: 0.2
+  pd_top_perc: 0.2
+  top_to_show_when_contrastive: 10
+  top_to_show_when_contrastive_perc: 0.95
+
+  conditions_to_run:
+    - EIG
+    - EIG-COST-AWARE
+    - LLM-SELECT
+    - TRUNCATED-EIG-COST-AWARE
+    - TRUNCATED-PD-COST-AWARE
+    - TRUNCATED-PD-EIG-COST-AWARE
+    - ADAPTIVE-EIG-COST-AWARE
+    - ADAPTIVE-PD-COST-AWARE
+    - ADAPTIVE-PD-EIG-COST-AWARE

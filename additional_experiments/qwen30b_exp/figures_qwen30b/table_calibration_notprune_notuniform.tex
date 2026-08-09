@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Calibration analysis for I-NP (Informative Prior, No Pruning). Analysis restricted to high-confidence predictions (confidence $\geq 0.9$), where the majority of predictions fall. ``\% High Conf'' shows the proportion of predictions in this region. ``Avg Conf'' and ``Accuracy'' are computed within this high-confidence subset. Gap = Avg Conf $-$ Accuracy; positive values indicate overconfidence.}
+\label{tab:calibration-notprune_notuniform}
+\begin{tabular}{@{}lccccl@{}}
+\toprule
+Method & \% High Conf & Avg Conf & Accuracy & Gap & Status \\
+\midrule
+ADAPTIVE-PD-COST-AWARE & 96.5\% & 97.2\% & 83.4\% & +13.8\% & Overconfident \\
+EIG-COST-AWARE & 97.5\% & 97.2\% & 81.5\% & +15.7\% & Overconfident \\
+TRUNCATED-PD-COST-AWARE & 98.5\% & 97.2\% & 81.2\% & +16.0\% & Overconfident \\
+TRUNCATED-PD-EIG-COST-AWARE & 96.5\% & 96.9\% & 77.7\% & +19.2\% & Overconfident \\
+\bottomrule
+\end{tabular}
+\end{table}

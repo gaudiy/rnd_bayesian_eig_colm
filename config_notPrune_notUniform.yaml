@@ -1,0 +1,109 @@
+# config.yaml
+
+# -------------------------
+# Model configuration
+# -------------------------
+# model_repo: Qwen/Qwen2-0.5B-Instruct
+# model_name: Qwen-0.5B
+model_repo: google/medgemma-4b-it   # HuggingFace model ID
+model_name: medgemma-4b-it          # name it whatever you want!
+# model_repo: Qwen/Qwen3-VL-8B-Instruct
+# model_name: Qwen-8B
+# model_repo: Qwen/Qwen2.5-3B-Instruct
+# model_name: Qwen-3B
+
+# -------------------------
+# System settings
+# -------------------------
+system:
+  gpu_ids: [2]                   # Which GPUs to use
+  queue_dir: "task_queue"           # Task queue directory
+  batch_size: 34                    # [Optimization] Large VRAM available, maximize batch size
+
+# -------------------------
+# Model settings
+# -------------------------
+model:
+  max_new_tokens: 128               # [Key optimization] Limit generation length to prevent stalls
+  temperature: 0.0                  # [Key optimization] Greedy decoding for maximum speed
+
+# -------------------------
+# Data settings
+# -------------------------
+data:
+  data_path: "mimic_data.csv" # where mimic sampled data is saved
+  disease_mapping_path: 'disease_mapping.json' # disease mapping created by claude
+  disease_list_path: "top_n_target_labels.txt"
+  output_dir: "results_notPrune_notUniform"
+
+mimic:
+  n_diseases_num: 500 # we only want the top 500 diseases
+  n_top_diseases_num: 100
+  n_patients_num: 1000 # how many patients do we want for the experiments
+  random_select_seed: 77
+  data_source_folder: 'physionet.org/files/mimic-iv-ed/2.2/ed'
+
+# -------------------------
+# Experiment parameters
+# -------------------------
+experiment:
+  start_idx: 0                      # Default start index
+  end_idx: 1000                      # Default end index
+  max_questions: 15                 # Maximum number of question rounds
+  confidence_threshold: 0.9         # Diagnosis confidence threshold
+  
+  # Cost-related parameters
+  question_cost: 15
+  question_num: 3                   # Number of questions generated per round
+  test_num: 3                       # Number of tests generated per round
+  
+  # Stagnation detection
+  stagnation_threshold: 0.15
+  stagnation_window: 1
+  stagnation_exit_threshold: 0.4    # Exit adaptive mode if surprise >= 0.4
+  
+  uniform_prior: false
+  use_pruning: false
+  
+  concentration_threshold: 0.90
+  concentration_top_perc: 0.2       # concentration_k = concentration_top_perc * len(disease_list)
+  # This specifies how many top items are checked to see whether their cumulative
+  # probability mass exceeds concentration_threshold
+  
+  pd_top_perc: 0.2                  # Top-k percentage for PD calculation
+
+  # When adaptive mode is triggered, how many top items should be focused on
+  # during question/test generation and EIG/PD calculation?
+  # (for truncated and adaptive modes)
+  top_to_show_when_contrastive: 10  # No longer used
+  # Instead, collect all top items whose cumulative probability >= 0.95.
+  # That is, `top_to_show_when_contrastive` is computed dynamically.
+  top_to_show_when_contrastive_perc: 0.95 
+
+  # -------------------------
+  # Conditions / experiments to run
+  # -------------------------
+  # Available conditions:
+  # EIG, PD, EIG-COST-AWARE, LLM-SELECT,
+  # TRUNCATED-EIG, ADAPTIVE-EIG, ADAPTIVE-EIG-COST-AWARE
+  # Comment out any condition you do not want to run
+  conditions_to_run:
+    - EIG
+    # - PD
+    - EIG-COST-AWARE
+    - LLM-SELECT
+    # - ADAPTIVE-EIG
+    # - PD-COST-AWARE
+    # - PD-EIG-COST-AWARE
+
+    # Truncated variants
+    - TRUNCATED-EIG-COST-AWARE
+    - TRUNCATED-PD-COST-AWARE
+    - TRUNCATED-PD-EIG-COST-AWARE 
+
+    # Adaptive variants
+    - ADAPTIVE-EIG-COST-AWARE
+    - ADAPTIVE-PD-COST-AWARE
+    - ADAPTIVE-PD-EIG-COST-AWARE
+    # - ADAPTIVE-PD
+    # - ADAPTIVE-PD-EIG

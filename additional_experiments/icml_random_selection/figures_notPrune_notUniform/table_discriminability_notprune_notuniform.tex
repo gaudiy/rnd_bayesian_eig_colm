@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Discriminability analysis for I-NP (Informative Prior, No Pruning). Cohen's $d$ measures how well confidence separates correct from incorrect predictions. Higher values indicate better self-awareness.}
+\label{tab:discriminability-notprune_notuniform}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & Conf (Correct) & Conf (Incorrect) & Gap & Cohen's $d$ & Interpretation \\
+\midrule
+RANDOM-EIG & 0.852 & 0.464 & +0.389 & 1.68 & Very Large \\
+EIG & 0.937 & 0.695 & +0.242 & 1.42 & Very Large \\
+LLM-SELECT & 0.493 & 0.572 & -0.078 & -0.26 & Inverted \\
+\bottomrule
+\end{tabular}
+\end{table}

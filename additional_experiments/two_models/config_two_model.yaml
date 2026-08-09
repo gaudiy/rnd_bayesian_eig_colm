@@ -1,0 +1,79 @@
+# config_two_model.yaml
+# Two-model experiment: 27b Oracle + 4b Agent
+# Oracle (27b) simulates ground truth; Agent (4b) is the AI being evaluated.
+# Run: python run_gpus_two_model.py --config config_two_model.yaml
+
+# -------------------------
+# Oracle model (strong — simulates human/ground truth)
+# -------------------------
+oracle_model_name: google/medgemma-27b-text-it
+vllm_oracle_base_url: "http://localhost:8234/v1"
+
+# -------------------------
+# Agent model (weak — the AI being evaluated)
+# -------------------------
+agent_model_name: google/medgemma-4b-it
+vllm_agent_base_url: "http://localhost:8235/v1"
+
+# -------------------------
+# System settings
+# -------------------------
+system:
+  queue_dir: "task_queue_two_model"
+  n_workers: 16
+
+# -------------------------
+# Data settings
+# -------------------------
+data:
+  data_path: "mimic_data.csv"
+  disease_mapping_path: "disease_mapping.json"
+  disease_list_path: "top_n_target_labels.txt"
+  output_dir: "results_two_model"
+
+mimic:
+  n_diseases_num: 500
+  n_top_diseases_num: 100
+  n_patients_num: 1000
+  random_select_seed: 77
+  data_source_folder: "physionet.org/files/mimic-iv-ed/2.2/ed"
+
+# -------------------------
+# Experiment parameters
+# -------------------------
+experiment:
+  start_idx: 0
+  end_idx: 100
+
+  max_questions: 15
+  confidence_threshold: 0.9
+
+  question_cost: 15
+  question_num: 3
+  test_num: 3
+
+  stagnation_threshold: 0.15
+  stagnation_window: 1
+  stagnation_exit_threshold: 0.4
+
+  uniform_prior: false
+  use_pruning: false
+
+  concentration_threshold: 0.90
+  concentration_top_perc: 0.2
+
+  pd_top_perc: 0.2
+
+  top_to_show_when_contrastive: 10
+  top_to_show_when_contrastive_perc: 0.95
+
+  conditions_to_run:
+    - EIG
+    - EIG-COST-AWARE
+    - LLM-SELECT
+    - TRUNCATED-EIG-COST-AWARE
+    - TRUNCATED-PD-COST-AWARE
+    - TRUNCATED-PD-EIG-COST-AWARE
+    - ADAPTIVE-EIG-COST-AWARE
+    - ADAPTIVE-PD-COST-AWARE
+    - ADAPTIVE-PD-EIG-COST-AWARE

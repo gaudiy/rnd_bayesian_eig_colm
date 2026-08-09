@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Summary results for I-NP (Informative Prior, No Pruning). Values show mean with 95\% CI in brackets.}
+\label{tab:results-notprune_notuniform}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & Acc (\%) & C\&C (\%) & Questions & Cost (\$) & Duration (s) \\
+\midrule
+ADAPTIVE-PD-COST-AWARE & 81.0 [75.0--85.8] & 80.5 [74.5--85.4] & 4.7 $\pm$ 0.5 & 148 $\pm$ 37 & 159.6 $\pm$ 17.4 \\
+EIG-COST-AWARE & 80.5 [74.5--85.4] & 79.0 [72.8--84.1] & 4.8 $\pm$ 0.4 & 163 $\pm$ 63 & 230.4 $\pm$ 21.0 \\
+TRUNCATED-PD-COST-AWARE & 80.0 [73.9--85.0] & 79.5 [73.4--84.5] & 4.7 $\pm$ 0.5 & 182 $\pm$ 55 & 108.1 $\pm$ 11.4 \\
+TRUNCATED-PD-EIG-COST-AWARE & 76.0 [69.6--81.4] & 74.5 [68.0--80.0] & 4.6 $\pm$ 0.5 & 173 $\pm$ 57 & 109.3 $\pm$ 11.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+# PyTorch with CUDA 12.4
+torch==2.5.1
+--index-url https://download.pytorch.org/whl/cu124
+
+# Hugging Face + utils
+transformers
+accelerate
+sentencepiece
+safetensors
+
+# Data & plotting
+pandas
+PyYAML
+numpy
+matplotlib

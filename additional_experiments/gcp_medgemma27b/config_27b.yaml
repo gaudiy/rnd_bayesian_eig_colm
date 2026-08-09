@@ -1,0 +1,81 @@
+# config_27b.yaml
+# Configuration for medgemma-27b experiments via vLLM
+# Run: python run_gpus_vllm.py --config config_27b.yaml
+
+# -------------------------
+# Model configuration
+# -------------------------
+model_name: google/medgemma-27b-text-it   # must match the ID used when starting vLLM
+
+# -------------------------
+# vLLM server
+# -------------------------
+vllm_base_url: "http://localhost:8234/v1"  # adjust port if you used a different one
+
+# -------------------------
+# System settings
+# -------------------------
+system:
+  queue_dir: "task_queue_27b"   # separate queue from 4b runs
+  n_workers: 32                  # concurrent worker processes hitting vLLM
+                                # more workers = more concurrent requests = better GPU util
+                                # 4-8 is a good range for one A100
+
+# -------------------------
+# Data settings
+# -------------------------
+data:
+  data_path: "mimic_data.csv"
+  disease_mapping_path: "disease_mapping.json"
+  disease_list_path: "top_n_target_labels.txt"
+  output_dir: "results_27b"
+
+mimic:
+  n_diseases_num: 500
+  n_top_diseases_num: 100
+  n_patients_num: 1000
+  random_select_seed: 77
+  data_source_folder: "physionet.org/files/mimic-iv-ed/2.2/ed"
+
+# -------------------------
+# Experiment parameters
+# -------------------------
+experiment:
+  start_idx: 0
+  end_idx: 100                      # 100 patients for rebuttal
+
+  max_questions: 15
+  confidence_threshold: 0.9
+
+  question_cost: 15
+  question_num: 3
+  test_num: 3
+
+  stagnation_threshold: 0.15
+  stagnation_window: 1
+  stagnation_exit_threshold: 0.4
+
+  uniform_prior: false
+  use_pruning: false
+
+  concentration_threshold: 0.90
+  concentration_top_perc: 0.2
+
+  pd_top_perc: 0.2
+
+  top_to_show_when_contrastive: 10  # unused (computed dynamically)
+  top_to_show_when_contrastive_perc: 0.95
+
+  # -------------------------
+  # Conditions to run
+  # -------------------------
+  conditions_to_run:
+    - EIG
+    - EIG-COST-AWARE
+    - LLM-SELECT
+    - TRUNCATED-EIG-COST-AWARE
+    - TRUNCATED-PD-COST-AWARE
+    - TRUNCATED-PD-EIG-COST-AWARE
+    - ADAPTIVE-EIG-COST-AWARE
+    - ADAPTIVE-PD-COST-AWARE
+    - ADAPTIVE-PD-EIG-COST-AWARE

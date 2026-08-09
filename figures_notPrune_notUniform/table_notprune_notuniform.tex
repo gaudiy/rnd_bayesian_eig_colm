@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Summary results for I-NP (Informative Prior, No Pruning). Values show mean with 95\% CI in brackets.}
+\label{tab:results-notprune_notuniform}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & Acc (\%) & C\&C (\%) & Questions & Cost (\$) & Duration (s) \\
+\midrule
+TRUNCATED-PD-EIG-COST-AWARE & 86.6 [84.3--88.6] & 76.2 [73.5--78.7] & 7.4 $\pm$ 0.3 & 205 $\pm$ 19 & 23.7 $\pm$ 0.9 \\
+ADAPTIVE-PD-COST-AWARE & 86.5 [84.2--88.5] & 77.0 [74.3--79.5] & 7.4 $\pm$ 0.3 & 248 $\pm$ 23 & 29.8 $\pm$ 1.1 \\
+ADAPTIVE-EIG-COST-AWARE & 86.3 [84.0--88.3] & 76.7 [74.0--79.2] & 7.6 $\pm$ 0.3 & 222 $\pm$ 21 & 30.2 $\pm$ 1.0 \\
+TRUNCATED-PD-COST-AWARE & 86.1 [83.8--88.1] & 76.7 [74.0--79.2] & 7.2 $\pm$ 0.3 & 236 $\pm$ 24 & 23.1 $\pm$ 0.9 \\
+ADAPTIVE-PD-EIG-COST-AWARE & 84.6 [82.2--86.7] & 74.5 [71.7--77.1] & 7.5 $\pm$ 0.3 & 231 $\pm$ 21 & 30.1 $\pm$ 1.1 \\
+TRUNCATED-EIG-COST-AWARE & 84.5 [82.1--86.6] & 74.5 [71.7--77.1] & 7.4 $\pm$ 0.3 & 213 $\pm$ 19 & 24.0 $\pm$ 0.9 \\
+EIG & 81.8 [79.3--84.1] & 71.3 [68.4--74.0] & 7.4 $\pm$ 0.3 & 526 $\pm$ 44 & 40.1 $\pm$ 1.5 \\
+EIG-COST-AWARE & 81.3 [78.8--83.6] & 70.4 [67.5--73.1] & 7.6 $\pm$ 0.3 & 299 $\pm$ 31 & 41.1 $\pm$ 1.5 \\
+LLM-SELECT & 35.8 [32.9--38.8] & 11.2 [9.4--13.3] & 10.3 $\pm$ 0.3 & 1130 $\pm$ 77 & 162.5 $\pm$ 5.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+# Requirements for 27b vLLM experiment
+# Install with: pip install -r requirements_27b.txt
+#
+# vllm installs its own compatible torch — do NOT pin torch here.
+
+# vLLM server
+vllm
+
+# Worker clients
+openai
+pandas
+PyYAML
+numpy

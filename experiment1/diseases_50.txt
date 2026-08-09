@@ -1,0 +1,52 @@
+Influenza
+Common cold
+COVID-19
+Pneumonia
+Bronchitis
+Asthma
+COPD
+Tuberculosis
+Type 2 diabetes
+Type 1 diabetes
+Hypertension
+Heart attack
+Angina
+Heart failure
+Atrial fibrillation
+Stroke
+Migraine
+Tension headache
+Epilepsy
+Parkinson's disease
+Alzheimer's disease
+Multiple sclerosis
+Depression
+Generalized anxiety disorder
+Panic disorder
+Rheumatoid arthritis
+Osteoarthritis
+Lupus
+Fibromyalgia
+Gout
+Gastroesophageal reflux disease
+Peptic ulcer
+Irritable bowel syndrome
+Crohn's disease
+Celiac disease
+Appendicitis
+Gallstones
+Hepatitis B
+Cirrhosis
+Kidney stones
+Urinary tract infection
+Chronic kidney disease
+Hypothyroidism
+Hyperthyroidism
+Anemia
+Leukemia
+Lymphoma
+Melanoma
+Breast cancer
+Lung cancer
+
+

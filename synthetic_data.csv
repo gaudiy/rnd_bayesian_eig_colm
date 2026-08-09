@@ -1,0 +1,75 @@
+subject_id_x,stay_id,seq_num,icd_code,icd_version,icd_title,clean_title,target_label,subject_id_y,temperature,heartrate,resprate,o2sat,sbp,dbp,pain,acuity,chiefcomplaint,gender,race,arrival_transport
+100451,39281045,1,M54.5,10,Low back pain,low back pain,Low Back Pain,100451,98.2,88,16,99,145,85,8,3,back pain,Male,White,Walk in
+100982,31128499,1,F10.239,10,Alcohol dependence with withdrawal,unspecified,alcohol dependence withdrawal,Alcohol Use Disorder,100982,99.1,115,18,97,158,92,4,3,etoh withdrawal,Male,Black,Ambulance
+101567,38472011,1,J18.9,10,Pneumonia, unspecified organism,pneumonia unspecified,Pneumonia,101567,102.4,110,26,91,110,70,5,2,shortness of breath,Female,White,Walk in
+102334,35561002,1,N39.0,10,Urinary tract infection, site not specified,uti,Urinary Tract Infection,102334,99.8,92,16,98,130,80,6,3,dysuria,Female,Hispanic,Walk in
+103882,32009812,1,F33.1,10,Major depressive disorder, recurrent, moderate,major depressive disorder,Major Depressive Disorder,103882,98.6,76,14,99,118,76,0,4,suicidal ideation,Male,White,Ambulance
+104119,30002931,1,M79.66,10,Pain in lower limb,pain lower limb,Lower Extremity Pain,104119,98.4,85,16,100,135,82,7,4,leg pain,Female,Asian,Walk in
+105671,34481005,1,S09.90,10,Unspecified injury of head,head injury,Head Injury,105671,98.5,90,18,99,142,88,6,3,fall,Male,Other,Ambulance
+106223,37728199,1,K92.2,10,Gastrointestinal hemorrhage, unspecified,gi hemorrhage,Gastrointestinal Hemorrhage,106223,98.9,118,20,96,95,60,3,2,rectal bleeding,Male,White,Ambulance
+107884,39910222,1,I50.9,10,Heart failure, unspecified,heart failure,Heart Failure,107884,98.1,95,24,89,160,95,2,2,dyspnea,Female,Black,Ambulance
+108441,31100284,1,M79.89,10,Other specified soft tissue disorders,soft tissue disorder,Limb Pain/Swelling,108441,98.7,80,14,98,128,78,5,4,arm swelling,Male,White,Walk in
+109920,36620191,1,M54.2,10,Cervicalgia,cervicalgia,Neck Pain,109920,98.3,74,16,100,130,80,8,4,neck pain,Female,Asian,Walk in
+110335,35581029,1,L03.119,10,Cellulitis of unspecified part of limb,cellulitis limb,Cellulitis Of Lower Extremity,110335,100.5,102,18,97,135,85,6,3,redness in leg,Male,Hispanic,Walk in
+111776,32201938,1,O21.0,10,Mild hyperemesis gravidarum,hyperemesis gravidarum,Pregnancy Related Condition,111776,98.6,110,18,98,105,65,4,3,vomiting,Female,Other,Walk in
+112558,38840110,1,J02.9,10,Acute pharyngitis, unspecified,acute pharyngitis,Pharyngitis,112558,101.1,98,16,98,122,78,6,4,sore throat,Male,White,Walk in
+113442,39928371,1,G40.909,10,Epilepsy, unspecified,epilepsy,Epilepsy,113442,98.8,105,20,96,145,88,1,2,seizure,Female,Black,Ambulance
+114991,33382001,1,S61.219,10,Laceration of finger,finger laceration,Finger Laceration,114991,98.2,88,14,99,138,82,5,4,cut finger,Male,White,Walk in
+115220,31192833,1,M79.601,10,Pain in arm,pain in arm,Upper Extremity Pain,115220,98.4,78,16,100,125,75,6,4,arm pain,Female,Asian,Walk in
+116883,34402918,1,N17.9,10,Acute kidney failure, unspecified,acute kidney failure,Acute Kidney Failure,116883,98.0,92,20,95,155,95,3,2,decreased urine output,Male,Black,Ambulance
+117554,37719220,1,J45.901,10,Unspecified asthma with (acute) exacerbation,asthma exacerbation,Asthma,117554,98.5,112,28,90,135,85,2,2,wheezing,Female,Hispanic,Walk in
+118339,36658112,1,I63.9,10,Cerebral infarction, unspecified,cerebral infarction,Cerebral Infarction/Stroke,118339,98.7,85,18,96,185,105,1,1,slurred speech,Male,White,Ambulance
+119002,32247101,1,N20.1,10,Calculus of ureter,ureter calculus,Kidney/Ureteral Calculus,119002,99.1,120,24,98,160,95,10,3,flank pain,Male,White,Walk in
+120448,39956281,1,I48.91,10,Unspecified atrial fibrillation,atrial fibrillation,Atrial Fibrillation,120448,98.4,135,20,96,110,70,2,2,palpitations,Female,White,Ambulance
+121993,31173822,1,K56.60,10,Unspecified intestinal obstruction,intestinal obstruction,Intestinal Obstruction,121993,98.9,108,22,97,140,88,8,2,abdominal pain,Male,Asian,Ambulance
+122557,35502911,1,D64.9,10,Anemia, unspecified,anemia,Anemia,122557,98.1,102,18,98,115,65,0,3,fatigue,Female,Black,Walk in
+123881,38491022,1,A41.9,10,Sepsis, unspecified organism,sepsis,Sepsis,123881,103.2,128,30,88,85,45,4,1,fever/confusion,Male,White,Ambulance
+124116,33320199,1,L03.113,10,Cellulitis of right upper limb,cellulitis upper limb,Cellulitis Of Upper Extremity,124116,100.1,94,18,98,132,80,5,3,arm redness,Female,Hispanic,Walk in
+125662,39982733,1,I21.9,10,Acute myocardial infarction, unspecified,acute MI,Myocardial Infarction,125662,98.3,115,24,94,165,98,9,1,chest pain,Male,White,Ambulance
+126330,32256100,1,J44.1,10,COPD with (acute) exacerbation,copd exacerbation,COPD,126330,98.6,105,26,86,145,90,2,2,dyspnea,Male,White,Ambulance
+127995,30092811,1,E10.10,10,Type 1 diabetes with ketoacidosis,type 1 diabetes dka,Type 1 Diabetes Mellitus,127995,97.9,122,32,96,110,70,3,1,vomiting/confusion,Female,Other,Ambulance
+128114,37751922,1,K52.9,10,Noninfective gastroenteritis and colitis,gastroenteritis,Noninfective Gastroenteritis,128114,99.2,100,18,98,118,72,5,3,diarrhea,Male,Asian,Walk in
+129558,34428399,1,E11.9,10,Type 2 diabetes without complications,type 2 diabetes,Type 2 Diabetes Mellitus,129558,98.4,85,16,98,142,86,1,4,high blood sugar,Male,Black,Walk in
+130221,31147201,1,M25.55,10,Pain in hip,hip pain,Hip/Pelvic Pain,130221,98.2,78,16,100,135,80,7,4,hip pain,Female,White,Walk in
+131779,35591038,1,F41.1,10,Generalized anxiety disorder,anxiety disorder,Anxiety Disorder,131779,98.8,110,24,99,150,90,1,4,panic attack,Female,Hispanic,Walk in
+132446,38820199,1,S06.5X9A,10,Traumatic subdural hemorrhage,subdural hemorrhage,Traumatic Subdural Hemorrhage,132446,98.1,65,14,95,170,95,8,1,headache/vomiting,Male,White,Ambulance
+133880,36602831,1,J11.1,10,Influenza due to unidentified virus,influenza,Influenza,133880,102.8,115,20,95,120,75,6,4,flu-like symptoms,Male,Asian,Walk in
+134113,32219382,1,B34.9,10,Viral infection, unspecified,viral infection,Viral Infection,134113,101.5,105,18,97,118,74,4,4,fever,Female,Black,Walk in
+135667,39938201,1,S93.401,10,Sprain of right ankle,ankle sprain,Ankle Sprain,135667,98.4,92,18,99,138,84,8,4,twisted ankle,Male,White,Walk in
+136229,33372911,1,I10,10,Essential (primary) hypertension,hypertension,Hypertension,136229,98.6,88,16,98,195,110,2,3,headache,Female,Black,Walk in
+137992,30058122,1,J06.9,10,Acute upper respiratory infection,uri,Acute Upper Respiratory Infection,137992,99.5,90,18,98,125,75,3,5,cough,Male,Hispanic,Walk in
+138115,35510299,1,K85.9,10,Acute pancreatitis, unspecified,acute pancreatitis,Acute Pancreatitis,138115,99.2,110,22,96,145,88,9,2,epigastric pain,Male,White,Walk in
+139551,31182033,1,S01.01,10,Laceration of scalp,scalp laceration,Scalp Wound,139551,98.3,95,16,99,135,82,5,3,head bleeding,Female,White,Ambulance
+140228,38873911,1,R31.9,10,Hematuria, unspecified,hematuria,Hematuria,140228,98.5,82,16,98,130,80,2,3,blood in urine,Male,Asian,Walk in
+141774,34491022,1,I26.99,10,Other pulmonary embolism,pulmonary embolism,Pulmonary Embolism,141774,99.0,125,30,88,105,65,5,1,shortness of breath,Female,Black,Ambulance
+142440,36638299,1,F29,10,Unspecified psychosis not due to substance,psychosis,Psychosis,142440,98.7,98,20,98,135,82,0,2,hallucinations,Male,White,Ambulance
+143886,32281005,1,G43.909,10,Migraine, unspecified,migraine,Migraine,143886,98.4,95,18,99,140,85,9,3,headache,Female,Other,Walk in
+144112,39902931,1,K57.32,10,Diverticulitis of large intestine,diverticulitis,Diverticulitis,144112,100.2,102,18,97,138,82,7,3,LLQ pain,Male,White,Walk in
+145669,33351922,1,K35.80,10,Unspecified acute appendicitis,appendicitis,Acute Appendicitis,145669,99.9,108,20,98,130,78,8,2,RLQ pain,Male,Hispanic,Walk in
+146225,37762011,1,M79.9,10,Soft tissue disorder, unspecified,soft tissue disorder,Soft Tissue Disorder,146225,98.5,80,16,99,122,76,4,5,leg pain,Female,White,Walk in
+147990,30047288,1,K62.5,10,Hemorrhage of anus and rectum,rectal hemorrhage,Rectal/Anal Hemorrhage,147990,98.6,105,18,97,115,70,3,3,rectal bleeding,Male,Black,Walk in
+148118,35528391,1,N10,10,Acute pyelonephritis,pyelonephritis,Pyelonephritis,148118,102.5,115,22,96,110,65,7,2,flank pain/fever,Female,White,Walk in
+149553,31139100,1,T81.4XXA,10,Infection following a procedure,postop infection,Postoperative Infection,149553,101.8,110,20,96,118,72,5,3,wound drainage,Male,Asian,Walk in
+150226,38891045,1,S72.009A,10,Fracture of neck of femur,hip fracture,Hip Fracture,150226,98.4,95,20,95,150,90,9,2,fall/hip pain,Female,White,Ambulance
+151770,34462811,1,E86.0,10,Dehydration,dehydration,Dehydration,151770,99.1,118,18,97,105,65,2,3,weakness/dizziness,Female,Hispanic,Walk in
+152443,36681933,1,S01.81XA,10,Laceration of other part of head,head laceration,Head Laceration,152443,98.5,88,16,99,135,82,4,4,forehead cut,Male,Black,Walk in
+153889,32292022,1,K59.00,10,Constipation, unspecified,constipation,Constipation,153889,98.3,82,16,98,140,85,5,4,stomach pain,Female,White,Walk in
+154110,39973819,1,S89.90XA,10,Unspecified injury of lower leg,lower leg injury,Lower Leg Injury,154110,98.6,90,18,99,132,80,6,4,leg trauma,Male,Other,Walk in
+155664,33301038,1,I61.9,10,Nontraumatic intracerebral hemorrhage,intracerebral hemorrhage,Intracerebral Hemorrhage,155664,98.9,68,16,94,190,110,7,1,altered mental status,Female,White,Ambulance
+156221,37748201,1,H53.9,10,Unspecified visual disturbance,visual disturbance,Visual Disturbance,156221,98.4,80,16,99,135,82,1,3,blurred vision,Male,Asian,Walk in
+157998,30019288,1,I95.9,10,Hypotension, unspecified,hypotension,Hypotension,157998,98.2,105,18,97,85,55,1,2,dizziness,Female,White,Ambulance
+158111,35547192,1,E87.5,10,Hyperkalemia,hyperkalemia,Hyperkalemia,158111,98.5,55,16,97,125,75,2,2,weakness,Male,Black,Ambulance
+159556,31158301,1,E87.1,10,Hypo-osmolality and hyponatremia,hyponatremia,Hyponatremia,159556,98.3,92,18,96,130,80,2,2,confusion,Female,White,Ambulance
+160224,38810233,1,S61.419A,10,Laceration of hand,hand laceration,Hand Laceration,160224,98.6,85,16,99,138,84,5,4,cut hand,Male,Hispanic,Walk in
+161778,34439110,1,S06.0X0A,10,Concussion without loss of consciousness,concussion,Concussion,161778,98.4,82,16,98,128,78,4,3,headache/fall,Female,White,Walk in
+162445,36612045,1,S22.39XA,10,Fracture of one rib, unspecified,rib fracture,Rib Fracture,162445,98.7,105,24,94,145,90,9,3,chest pain,Male,White,Walk in
+163883,32273822,1,R52,10,Pain, unspecified,acute pain,Acute Pain,163883,98.9,110,20,98,155,95,9,3,severe pain,Female,Black,Walk in
+164117,39961911,1,J90,10,Pleural effusion, not elsewhere classified,pleural effusion,Pleural Effusion,164117,98.5,98,24,92,130,80,3,2,shortness of breath,Male,Asian,Walk in
+165660,33342831,1,G89.29,10,Other chronic pain,chronic pain,Chronic Pain,165660,98.2,80,16,98,135,82,6,4,back pain,Female,White,Walk in
+166222,37791002,1,L03.319,10,Cellulitis of trunk,cellulitis trunk,Cellulitis Of Trunk,166222,100.8,100,18,97,125,75,6,3,redness on back,Male,Hispanic,Walk in
+167994,30078399,1,I49.9,10,Cardiac arrhythmia, unspecified,arrhythmia,Cardiac Arrhythmia,167994,98.5,145,22,96,115,70,3,2,palpitations,Female,White,Ambulance
+168119,35572011,1,T78.40XA,10,Allergy, unspecified,allergy,Allergy,168119,98.6,110,20,96,130,80,2,3,rash/itching,Male,Black,Walk in
+169557,31110284,1,T81.0,10,Hemorrhage and hematoma complicating a procedure,postop hemorrhage,Postoperative Hemorrhage/Hematoma,169557,98.3,120,22,95,100,60,6,2,bleeding,Female,White,Ambulance
+170220,38859122,1,G45.9,10,Transient cerebral ischemic attack,tia,TIA,170220,98.6,88,16,98,160,95,1,2,facial droop,Male,Asian,Ambulance
+171775,34418301,1,K08.9,10,Disorder of teeth and supporting structures,dental disorder,Dental Disorder,171775,98.8,95,18,99,145,90,8,4,toothache,Female,Hispanic,Walk in
+172442,36692033,1,S20.219A,10,Contusion of chest wall,chest wall contusion,Chest Wall Contusion,172442,98.4,92,18,97,135,85,6,3,chest pain after fall,Male,White,Walk in

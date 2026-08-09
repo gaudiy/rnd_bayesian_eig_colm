@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Calibration analysis for U-P (Uniform Prior, Pruning). Analysis restricted to high-confidence predictions (confidence $\geq 0.9$), where the majority of predictions fall. ``\% High Conf'' shows the proportion of predictions in this region. ``Avg Conf'' and ``Accuracy'' are computed within this high-confidence subset. Gap = Avg Conf $-$ Accuracy; positive values indicate overconfidence.}
+\label{tab:calibration-prune_uniform}
+\begin{tabular}{@{}lccccl@{}}
+\toprule
+Method & \% High Conf & Avg Conf & Accuracy & Gap & Status \\
+\midrule
+TRUNCATED-PD-COST-AWARE & 72.6\% & 96.3\% & 100.0\% & -3.7\% & Well calibrated \\
+TRUNCATED-EIG-COST-AWARE & 71.3\% & 96.4\% & 100.0\% & -3.6\% & Well calibrated \\
+EIG-COST-AWARE & 76.0\% & 96.3\% & 99.9\% & -3.6\% & Well calibrated \\
+ADAPTIVE-PD-EIG-COST-AWARE & 74.7\% & 96.4\% & 100.0\% & -3.6\% & Well calibrated \\
+TRUNCATED-PD-EIG-COST-AWARE & 72.5\% & 96.5\% & 100.0\% & -3.5\% & Well calibrated \\
+ADAPTIVE-EIG-COST-AWARE & 75.1\% & 96.4\% & 99.9\% & -3.5\% & Well calibrated \\
+ADAPTIVE-PD-COST-AWARE & 75.6\% & 96.5\% & 100.0\% & -3.5\% & Well calibrated \\
+EIG & 75.0\% & 96.8\% & 100.0\% & -3.2\% & Well calibrated \\
+LLM-SELECT & 39.9\% & 97.8\% & 29.8\% & +68.0\% & Overconfident \\
+\bottomrule
+\end{tabular}
+\end{table}

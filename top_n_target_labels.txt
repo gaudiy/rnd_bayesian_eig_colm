@@ -1,0 +1,100 @@
+Low Back Pain
+Alcohol Use Disorder
+Pneumonia
+Urinary Tract Infection
+Major Depressive Disorder
+Lower Extremity Pain
+Head Injury
+Gastrointestinal Hemorrhage
+Heart Failure
+Limb Pain/Swelling
+Neck Pain
+Cellulitis Of Lower Extremity
+Pregnancy Related Condition
+Pharyngitis
+Epilepsy
+Finger Laceration
+Upper Extremity Pain
+Acute Kidney Failure
+Asthma
+Cerebral Infarction/Stroke
+Kidney/Ureteral Calculus
+Atrial Fibrillation
+Intestinal Obstruction
+Anemia
+Sepsis
+Cellulitis Of Upper Extremity
+Myocardial Infarction
+COPD
+Type 1 Diabetes Mellitus
+Noninfective Gastroenteritis
+Type 2 Diabetes Mellitus
+Hip/Pelvic Pain
+Anxiety Disorder
+Influenza
+Traumatic Subdural Hemorrhage
+Viral Infection
+Ankle Sprain
+Hypertension
+Acute Upper Respiratory Infection
+Acute Pancreatitis
+Scalp Wound
+Hematuria
+Pulmonary Embolism
+Psychosis
+Migraine
+Diverticulitis
+Acute Appendicitis
+Soft Tissue Disorder
+Rectal/Anal Hemorrhage
+Pyelonephritis
+Postoperative Infection
+Dehydration
+Hip Fracture
+Head Laceration
+Constipation
+Lower Leg Injury
+Intracerebral Hemorrhage
+Visual Disturbance
+Hypotension
+Hyperkalemia
+Hyponatremia
+Hand Laceration
+Concussion
+Rib Fracture
+Acute Pain
+Pleural Effusion
+Chronic Pain
+Cellulitis Of Trunk
+Cardiac Arrhythmia
+Allergy
+Postoperative Hemorrhage/Hematoma
+TIA
+Dental Disorder
+Chest Wall Contusion
+Knee/Lower Leg Contusion
+Bronchitis
+Bipolar Disorder
+Vertebral Fracture
+Threatened Abortion/Early Pregnancy Bleeding
+Hypokalemia
+Cholelithiasis
+Abnormal Uterine Bleeding
+Vascular Device Complication
+Coronary Artery Disease
+Deep Vein Thrombosis
+Neutropenia
+Cardiac Arrest
+Subarachnoid Hemorrhage
+Myalgia
+Lip Laceration
+Knee/Leg Sprain
+Cellulitis Of Face
+Brain Disorder
+Sciatica
+Unstable Angina/ACS
+Distal Radius Fracture
+Ankle Fracture
+Acute Cholecystitis
+Face/Neck Contusion
+Lower Extremity Laceration

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Discriminability analysis for I-NP (Informative Prior, No Pruning). Cohen's $d$ measures how well confidence separates correct from incorrect predictions. Higher values indicate better self-awareness.}
+\label{tab:discriminability-notprune_notuniform}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Method & Conf (Correct) & Conf (Incorrect) & Gap & Cohen's $d$ & Interpretation \\
+\midrule
+ADAPTIVE-EIG-COST-AWARE & 0.959 & 0.530 & +0.430 & 0.00 & Small \\
+ADAPTIVE-PD-COST-AWARE & 0.952 & 0.000 & +0.952 & 0.00 & Small \\
+ADAPTIVE-PD-EIG-COST-AWARE & 0.960 & 0.000 & +0.960 & 0.00 & Small \\
+EIG & 0.946 & 0.902 & +0.045 & 0.00 & Small \\
+EIG-COST-AWARE & 0.958 & 0.548 & +0.410 & 0.00 & Small \\
+TRUNCATED-EIG-COST-AWARE & 0.958 & 0.679 & +0.278 & 0.00 & Small \\
+TRUNCATED-PD-COST-AWARE & 0.961 & 0.730 & +0.231 & 0.00 & Small \\
+TRUNCATED-PD-EIG-COST-AWARE & 0.956 & 0.732 & +0.224 & 0.00 & Small \\
+LLM-SELECT & 0.254 & 0.281 & -0.028 & -0.21 & Inverted \\
+\bottomrule
+\end{tabular}
+\end{table}
